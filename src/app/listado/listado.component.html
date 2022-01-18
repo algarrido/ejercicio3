@@ -1,0 +1,17 @@
+
+<form (submit)="addLista()">
+<h4>{{nombre}}</h4>
+ <p>
+   <input type="text" [(ngModel)]="lista"
+      [ngModelOptions]="{standalone:true}"/>
+  </p>
+
+</form>
+
+<h3>Mis clientes</h3>
+<ul>
+  <li *ngFor="let l of listado">
+    {{l}}
+  </li>
+</ul>
+
