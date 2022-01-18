@@ -1,11 +1,11 @@
 
 <form (submit)="addLista()">
 <h4>{{nombre}}</h4>
- <p>
-   <input type="text" [(ngModel)]="lista"
-      [ngModelOptions]="{standalone:true}"/>
+  <p>
+    <input type="text" [(ngModel)]="lista"
+    [ngModelOptions]="{standalone:true}"/>
   </p>
-
+ <button class="button" type="submit"> Añadir</button>
 </form>
 
 <h3>Mis clientes</h3>

@@ -18,10 +18,12 @@ export class ListadoComponent implements OnInit {
   lista:String="";
 
   addLista(){
-    let miLista=this.lista;
-    this.listado?.push(miLista)
-    this.lista = "";
+    if(this.lista=="") {
+      console.log("campo vacío")
+    }else{
+      let miLista=this.lista;
+      this.listado?.push(miLista)
+      this.lista = "";
+    }
   }
-
-
 }
