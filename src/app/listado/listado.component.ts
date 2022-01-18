@@ -6,16 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listado.component.css']
 })
 export class ListadoComponent implements OnInit {
+  lista:String;
+  nombre:string;
 
-  constructor() { }
+  constructor() {
+    this.lista="";
+    this.nombre="Nombre"
+  }
 
   ngOnInit(): void {
   }
-  nombre:string="Nombre";
-  public listado: String[] =[
 
-];
-  lista:String="";
+  public listado: String[] = [];
+
 
   addLista(){
     if(this.lista=="") {

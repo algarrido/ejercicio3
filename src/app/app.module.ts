@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ListadoComponent } from './listado/listado.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MisClientesComponent } from './mis-clientes/mis-clientes.component';
+import { CondicionalesComponent } from './condicionales/condicionales.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoComponent,
-    MisClientesComponent
+    MisClientesComponent,
+    CondicionalesComponent,
   ],
   imports: [
     BrowserModule,

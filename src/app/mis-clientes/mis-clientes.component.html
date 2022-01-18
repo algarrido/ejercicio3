@@ -1,0 +1,26 @@
+<h3>------- Parte 2 -------</h3>
+<h2>Añadir Cliente</h2>
+<form (submit)="addCliente()" >
+  <p>
+    <label>Nombre &nbsp;</label>
+    <input type="text" [(ngModel)]="cliente.nombre"
+         [ngModelOptions]="{standalone: true}"/>
+  </p>
+  <p>
+    <label>Dirección &nbsp; </label>
+    <input type="text" [(ngModel)]="cliente.direccion"
+           [ngModelOptions]="{standalone: true}"/>
+  </p>
+
+  <div>
+    <input type="submit" value="Añadir">
+  </div>
+</form>
+
+<h4>Listado de clientes</h4>
+<ul>
+  <li *ngFor="let cliente of clientes">
+    {{cliente.nombre}}
+    {{cliente.direccion}}
+  </li>
+</ul>
