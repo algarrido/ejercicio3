@@ -1,0 +1,11 @@
+<h3>------- Parte 4 -------</h3>
+
+<button (click)="verResultados()">Ver los resultados</button>
+<ul>
+  <li *ngFor="let resultado of listadoVisible">
+   <p>{{resultado.nombre}}: {{resultado.dipu}} &nbsp;
+    <img src="https://cursosdedesarrollo.com/pactometro/img/{{resultado.imagen}}"
+         width="90px"
+         height="40px"/></p>
+  </li>
+</ul>

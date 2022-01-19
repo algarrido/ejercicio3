@@ -7,6 +7,9 @@ import { ListadoComponent } from './listado/listado.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MisClientesComponent } from './mis-clientes/mis-clientes.component';
 import { CondicionalesComponent } from './condicionales/condicionales.component';
+import { ResultadosComponent } from './resultados/resultados.component';
+import { ResultadosService } from './service/resultados.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,13 @@ import { CondicionalesComponent } from './condicionales/condicionales.component'
     ListadoComponent,
     MisClientesComponent,
     CondicionalesComponent,
+    ResultadosComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, ReactiveFormsModule
+    AppRoutingModule, FormsModule, ReactiveFormsModule,HttpClientModule
   ],
-  providers: [],
+  providers: [ResultadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
